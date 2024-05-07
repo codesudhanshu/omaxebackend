@@ -21,7 +21,7 @@ mongoose.connect(url)
 
 app.get("/",(req,res)=>{
     res.send("Hello World")
-}
+})
 
 app.post("/data", async (req, res) => {
     try {
