@@ -19,6 +19,10 @@ mongoose.connect(url)
 .then(()=>console.log('momgodb has been connected'))
 .catch(()=>console.log('mongodb give some error'))
 
+app.get("/",(req,res)=>{
+    res.send("Hello World")
+}
+
 app.post("/data", async (req, res) => {
     try {
         const { name, phoneNumber, email } = req.body;
